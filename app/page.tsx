@@ -137,7 +137,7 @@ export default function Home() {
                 <div className="flex items-center mb-4">
                   <Image src="/images/heart.svg" alt="Heart" width={40} height={40} className="mr-3" />
                   <h3 className="text-xl font-semibold text-purple-800">
-                    "My Daughter, My Star"
+                    &ldquo;My Daughter, My Star&rdquo;
                   </h3>
                 </div>
                 <div className="text-gray-700 leading-relaxed space-y-4 poem-text">
@@ -162,7 +162,7 @@ export default function Home() {
                 <div className="flex items-center mb-4">
                   <Image src="/images/flower.svg" alt="Flower" width={40} height={40} className="mr-3" />
                   <h3 className="text-xl font-semibold text-pink-800">
-                    "Mama, My Angel"
+                    &ldquo;Mama, My Angel&rdquo;
                   </h3>
                 </div>
                 <div className="text-gray-700 leading-relaxed space-y-4 poem-text">
@@ -187,7 +187,7 @@ export default function Home() {
                 <div className="flex items-center mb-4">
                   <Image src="/images/star.svg" alt="Star" width={40} height={40} className="mr-3" />
                   <h3 className="text-xl font-semibold text-blue-800">
-                    "Our Eternal Bond"
+                    &ldquo;Our Eternal Bond&rdquo;
                   </h3>
                 </div>
                 <div className="text-gray-700 leading-relaxed space-y-4 poem-text">
