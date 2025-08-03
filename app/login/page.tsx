@@ -3,12 +3,14 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
+import { useLanguage } from '../contexts/LanguageContext';
 
 export default function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const router = useRouter();
+  const { t } = useLanguage();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -19,7 +21,7 @@ export default function Login() {
       localStorage.setItem('isAuthenticated', 'true');
       router.push('/');
     } else {
-      setError('Incorrect username or password');
+      setError(t('login.error'));
     }
   };
 
@@ -30,13 +32,13 @@ export default function Login() {
           <h1 className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-2">
             Irina Love Elena
           </h1>
-          <p className="text-gray-600">Private access</p>
+          <p className="text-gray-600">{t('login.private.access')}</p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
             <label htmlFor="username" className="block text-sm font-medium text-gray-700 mb-2">
-              Username
+              {t('login.username')}
             </label>
             <input
               type="text"
@@ -44,14 +46,14 @@ export default function Login() {
               value={username}
               onChange={(e) => setUsername(e.target.value)}
               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-              placeholder="Enter username"
+              placeholder={t('login.enter.username')}
               required
             />
           </div>
 
           <div>
             <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-2">
-              Password
+              {t('login.password')}
             </label>
             <input
               type="password"
@@ -59,7 +61,7 @@ export default function Login() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent"
-              placeholder="Enter password"
+              placeholder={t('login.enter.password')}
               required
             />
           </div>
@@ -74,7 +76,7 @@ export default function Login() {
             type="submit"
             className="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white py-3 px-4 rounded-lg font-medium hover:from-purple-700 hover:to-pink-700 transition-all duration-200"
           >
-            Login
+            {t('login.button')}
           </button>
         </form>
       </div>
