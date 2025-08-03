@@ -14,7 +14,7 @@ export default function Login() {
     e.preventDefault();
     
     // Credentials simples pour la démo
-    if (username === 'irina7' && password === 'elena9') {
+    if (username === 'Irina7' && password === 'elena9') {
       // Stocker l'état de connexion
       localStorage.setItem('isAuthenticated', 'true');
       router.push('/');
