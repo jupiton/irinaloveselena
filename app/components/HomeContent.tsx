@@ -3,6 +3,7 @@
 import Image from "next/image";
 import LogoutButton from "./LogoutButton";
 import LanguageSelector from "./LanguageSelector";
+import PhotoCarousel from "./PhotoCarousel";
 import { useLanguage } from "../contexts/LanguageContext";
 
 export default function HomeContent() {
@@ -44,29 +45,22 @@ export default function HomeContent() {
             </div>
           </div>
           <div className="relative animate-fade-in-up" style={{animationDelay: '0.6s'}}>
-            <div className="relative rounded-2xl p-8 h-80 flex items-center justify-center animate-float overflow-hidden">
-              {/* Background Image */}
-              <Image 
-                src="/images/bucarest-capitale-roumanie.webp" 
-                alt="Bucarest - Capitale Roumanie" 
-                fill
-                className="object-cover absolute inset-0 z-0"
-                style={{filter: 'brightness(0.7) contrast(1.1)'}}
-              />
-              {/* Overlay gradient */}
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-900/60 to-pink-900/60 z-10"></div>
-              {/* Content */}
-              <div className="text-center relative z-20">
+            <div className="space-y-6">
+              {/* Title Section */}
+              <div className="text-center">
                 <div className="flex justify-center items-center space-x-4 mb-4">
                   <Image src="/images/heart.svg" alt="Heart" width={60} height={60} className="animate-pulse-slow" />
                   <Image src="/images/flower.svg" alt="Flower" width={60} height={60} className="animate-pulse-slow" />
                   <Image src="/images/star.svg" alt="Star" width={60} height={60} className="animate-pulse-slow" />
                 </div>
-                <p className="text-xl font-medium text-white">
+                <h2 className="text-3xl font-bold text-gray-800 mb-2">
                   {t('mother.daughter')}
-                </p>
-                <p className="text-white/90">{t('eternal.love')}</p>
+                </h2>
+                <p className="text-gray-600 text-lg">{t('eternal.love')}</p>
               </div>
+              
+              {/* Photo Carousel */}
+              <PhotoCarousel />
             </div>
           </div>
         </div>
