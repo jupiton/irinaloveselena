@@ -1,0 +1,19 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="flowerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff9800;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f44336;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Petals -->
+  <path d="M50 20C50 20 60 30 60 40C60 50 50 60 50 60C50 60 40 50 40 40C40 30 50 20 50 20Z" fill="url(#flowerGradient)"/>
+  <path d="M50 20C50 20 60 30 60 40C60 50 50 60 50 60C50 60 40 50 40 40C40 30 50 20 50 20Z" fill="url(#flowerGradient)" transform="rotate(45 50 50)"/>
+  <path d="M50 20C50 20 60 30 60 40C60 50 50 60 50 60C50 60 40 50 40 40C40 30 50 20 50 20Z" fill="url(#flowerGradient)" transform="rotate(90 50 50)"/>
+  <path d="M50 20C50 20 60 30 60 40C60 50 50 60 50 60C50 60 40 50 40 40C40 30 50 20 50 20Z" fill="url(#flowerGradient)" transform="rotate(135 50 50)"/>
+  <path d="M50 20C50 20 60 30 60 40C60 50 50 60 50 60C50 60 40 50 40 40C40 30 50 20 50 20Z" fill="url(#flowerGradient)" transform="rotate(180 50 50)"/>
+  <path d="M50 20C50 20 60 30 60 40C60 50 50 60 50 60C50 60 40 50 40 40C40 30 50 20 50 20Z" fill="url(#flowerGradient)" transform="rotate(225 50 50)"/>
+  <path d="M50 20C50 20 60 30 60 40C60 50 50 60 50 60C50 60 40 50 40 40C40 30 50 20 50 20Z" fill="url(#flowerGradient)" transform="rotate(270 50 50)"/>
+  <path d="M50 20C50 20 60 30 60 40C60 50 50 60 50 60C50 60 40 50 40 40C40 30 50 20 50 20Z" fill="url(#flowerGradient)" transform="rotate(315 50 50)"/>
+  <!-- Center -->
+  <circle cx="50" cy="50" r="8" fill="#4caf50"/>
+</svg> 
